@@ -3,41 +3,15 @@ package homework1;
 public class Gugudan {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
-		for(int i = 1; i < 10; i+=2) {
-			for(int j = 9; j>i; j-=2) {
-				System.out.print(" ");
-			}
-			for(int j = 0; j < i; j++ ) {
-				System.out.print("*");
+		int i, j;
+		int arr[][] = new int[10][10];
+		
+		for(i=1; i<10; i++) {
+			for(j=1; j<10; j++) {
+				arr[i][j] = i*j;
+				System.out.print(arr[i][j]+"\t");
 			}
 			System.out.println();
 		}
 		
-		for(int i =1; i<10; i+=2) {
-			for(int j=0; j<i; j+=2) {
-				System.out.print(" ");
-			}
-			for(int j = 8; j>i; j--) {
-				System.out.print("*");
-			}
-			System.out.println();
-		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	}
-
-}
